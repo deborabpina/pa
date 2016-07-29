@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/bibliopdf">
+  <Resource 
+    auth="Container"
+    driverClassName="org.postgresql.Driver"
+    logAbandoned="false"
+    maxActive="20"
+    maxIdle="10"
+    maxWait="-1"
+    name="jdbc/dbpdf"
+    password="123"
+    removeAbandoned="true"
+    removeAbandonedTimeout="60"
+    type="javax.sql.DataSource"
+    url="jdbc:postgresql://127.0.0.1:5432/bibliopdf"
+    username="postgres"
+  />
+    <Resource auth="Container" 
+              driverClassName="org.postgresql.Driver" 
+              logAbandoned="false" 
+              maxActive="20" 
+              maxIdle="10" 
+              maxWait="-1" 
+              name="jdbc/authority" 
+              password="123" 
+              removeAbandoned="true" 
+              removeAbandonedTimeout="60" 
+              type="javax.sql.DataSource" 
+              url="jdbc:postgresql://127.0.0.1:5432/usuariossenhas" 
+              username="postgres"/>
+    <Realm className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="jdbc/authority" 
+           debug="99" 
+           localDataSource="true" 
+           name="terceiroTrabalho" 
+           roleNameCol="grupo" 
+           userCredCol="senha" 
+           userNameCol="usuario" 
+           userRoleTable="grupos" 
+           userTable="usuarios"/>
+</Context>

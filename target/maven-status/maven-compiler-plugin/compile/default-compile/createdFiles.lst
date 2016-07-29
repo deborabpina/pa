@@ -1,0 +1,9 @@
+ufrj\bibliopdf\dao\BaseDAO.class
+ufrj\bibliopdf\Logout.class
+ufrj\bibliopdf\dto\RespostaDTO.class
+ufrj\bibliopdf\TratadorFazerUpload.class
+utils\Utils.class
+ufrj\bibliopdf\dao\BiblioPDFDAO.class
+ufrj\bibliopdf\ApplicationConfig.class
+ufrj\bibliopdf\dto\RespostaCompletaDTO.class
+ufrj\bibliopdf\ServletDeCatalogo.class
